@@ -1,6 +1,5 @@
 # Customer 360 Sales Performance Dashboard (SQL + Power BI)
 
-Brief Description:
 This project analyzes sales performance and customer behavior by building a structured Star Schema model in SQL Server and developing an interactive Power BI dashboard. The goal is to provide a 360-degree view of customers, products, regions, and overall business performance.
 
 ## 🛠 Tools Used
