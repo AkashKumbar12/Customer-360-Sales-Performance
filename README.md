@@ -1,21 +1,19 @@
-Customer 360 Sales Dashboard (SQL + Power BI)
+# Customer 360 Sales Performance Dashboard (SQL + Power BI)
 
-A data analytics project that builds a Customer 360° view using SQL Server for data modeling and Power BI for dashboarding.
-The project provides insights into sales, customers, products, and regional performance.
+Brief Description:
+This project analyzes sales performance and customer behavior by building a structured Star Schema model in SQL Server and developing an interactive Power BI dashboard. The goal is to provide a 360-degree view of customers, products, regions, and overall business performance.
 
-🛠 Tools Used
+## 🛠 Tools Used
 
-SQL Server
+SQL Server – Data cleaning, transformation, and star schema modeling
 
-Power BI
+Power BI – Dashboard creation, DAX calculations, and visual analytics
 
-Excel/CSV (source data)
+Excel/CSV – Raw dataset (Superstore)
 
-🗄 Data Model (Star Schema)
+## 🗄 Data Model Used (Star Schema)
 
-Fact Table:
-
-fact_sales
+Fact Table: fact_sales
 
 Dimension Tables:
 
@@ -25,42 +23,30 @@ dim_products
 
 dim_dates
 
-🔍 SQL Work Performed
+The model is designed to optimize analytical queries and improve Power BI performance.
 
-Data cleaning and transformation
+## 🔍 Project Overview
 
-Creating dimension & fact tables
+Loaded raw Superstore data into SQL Server
 
-Handling duplicates and nulls
+Cleaned and prepared the data (type conversion, null handling, standardization)
 
-Defining primary/foreign keys
+Created a Star Schema with fact and dimension tables
 
-Building star schema relationships
+Built relationships using primary and foreign keys
 
-📈 Power BI Dashboard Features
+Imported SQL tables into Power BI for reporting
 
-Executive Summary: Sales, Profit, Margin, KPIs
+Created DAX measures for KPIs such as Total Sales, Profit, Margin %, Customer Count, AOV, YTD Sales, and YoY Growth
 
-Customer Insights: Top customers, segments
+Designed multiple dashboard pages: Executive Summary, Customer Insights, Product Analysis, and Regional Performance
 
-Product Analysis: Category & sub-category performance
+## 🎯 Key Insights
 
-Regional Performance: Region-wise sales & profit
+Identified top-performing regions, products, and customer segments
 
-Sales Trends: MTD, YTD, YoY Growth
+Analyzed monthly and yearly sales trends
 
-🧮 Sample DAX Measures
-Total Sales = SUM(fact_sales[Sales])
-Total Profit = SUM(fact_sales[Profit])
-Profit Margin % = DIVIDE([Total Profit], [Total Sales], 0)
-Customer Count = DISTINCTCOUNT(dim_customers[Customer_ID])
+Measured profit margins and discount impact
 
-🎯 Key Insights
-
-High-performing regions identified
-
-Top product categories driving revenue
-
-Customer segments contributing most sales
-
-Discount impact on profitability
+Highlighted high-value customers and low-margin product categories
