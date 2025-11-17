@@ -3,17 +3,6 @@ Customer 360 Sales Dashboard (SQL + Power BI)
 A data analytics project that builds a Customer 360° view using SQL Server for data modeling and Power BI for dashboarding.
 The project provides insights into sales, customers, products, and regional performance.
 
-📁 Project Structure
-├── SQL/
-│   ├── create_tables.sql
-│   ├── insert_data.sql
-│   └── star_schema.sql
-│
-├── PowerBI/
-│   └── Customer360.pbix
-│
-└── README.md
-
 🛠 Tools Used
 
 SQL Server
